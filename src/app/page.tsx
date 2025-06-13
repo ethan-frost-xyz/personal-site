@@ -3,12 +3,10 @@ export default function HomePage() {
     <section className="max-w-2xl mt-20 space-y-6">
       <h1 className="text-4xl font-semibold">Hi, I’m Ethan Frost.</h1>
       <p className="text-lg text-neutral-300">
-        I turn frontier-tech insight into operational outcomes—combining equity-research rigor
-        with systems thinking and a defense-first mindset.
+        stella this is what i have been doing after work.
       </p>
       <p className="text-neutral-400">
-        This site is a window into how I work. No fluff—just real casework, code, and strategy
-        shipped solo.
+        i am going to make it into a project portfolio website dont judge i just started today after work idk what the fuck i am dooooooing.
       </p>
     </section>
   )
