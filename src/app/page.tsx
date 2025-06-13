@@ -8,6 +8,9 @@ export default function HomePage() {
       <p className="text-neutral-400">
         i am going to make it into a project portfolio website dont judge i just started today after work idk what the fuck i am dooooooing.
       </p>
+      <p className="text-neutral-400">
+        what are you doing tonight?  
+      </p>
     </section>
   )
 }
