@@ -110,7 +110,6 @@ export default function AboutPage() {
               <li>Widened aperture across startup verticals and sparked my interest in hard tech</li>
             </ul>
           </li>
-
           {/* Superplastic Internship */}
           <li className="mb-10 ml-6">
             <span className="absolute -left-3 flex h-6 w-6 items-center justify-center rounded-full bg-gray-200 ring-8 ring-gray-900" />
@@ -120,23 +119,39 @@ export default function AboutPage() {
             </h3>
             <p className="text-sm text-gray-400 italic">Burlington, VT</p>
             <ul className="list-disc list-inside text-sm text-gray-400 space-y-1">
-              <li>Interned across multiple departments including marketing, sales, partnerships, and Web3 initiatives</li>
+              <li>Was hired to support the company's Web3 efforts, expanded into a generalist role serving across multiple departments including marketing, sales, partnerships, and Web3 initiatives</li>
               <li><a href="https://superplastic.co/" target="_blank" rel="noopener noreferrer" className="underline hover:text-gray-300">Superplastic</a> is a entertainment based startup that intertwines physical and digital experiences through digital celebrities</li>
             </ul>
           </li>
+          {/* Defi Exploration */}
           <li className="mb-10 ml-6">
             <span className="absolute -left-3 flex h-6 w-6 items-center justify-center rounded-full bg-gray-200 ring-8 ring-gray-900" />
-            <time className="mb-1 text-sm font-normal leading-none text-gray-500">Winter 2020</time>
+            <time className="mb-1 text-sm font-normal leading-none text-gray-500">2021 to 2022</time>
+            <h3 className="text-lg font-medium text-gray-100">
+              Defi Exploration
+            </h3>
+            <p className="text-sm text-gray-400 italic">Burlington, VT</p>
+            <ul className="list-disc list-inside text-sm text-gray-400 space-y-1">
+              <li>Had been following the space since 2017, with my free time I dove in head first</li>
+              <li>Created an NFT collection with some friends, personally coded the smart contract (ERC-721)</li>
+              <li>Also got certifications from INSEAD and Duke University in Blockchain and DeFi, respectively</li>
+              <li>These experiences were a key driver to getting my first internship at Superplastic</li>
+            </ul>
+          </li>
+          {/* Real Estate License */}
+          <li className="mb-10 ml-6">
+            <span className="absolute -left-3 flex h-6 w-6 items-center justify-center rounded-full bg-gray-200 ring-8 ring-gray-900" />
+            <time className="mb-1 text-sm font-normal leading-none text-gray-500">Winter Break 2020</time>
             <h3 className="text-lg font-medium text-gray-100">
               Passed National and State Real Estate License (VT)
             </h3>
             <p className="text-sm text-gray-400 italic">Burlington, VT</p>
             <ul className="list-disc list-inside text-sm text-gray-400 space-y-1">
-              <li>Was looking for a challenge during my winter break</li>
-              <li>Maybe add how i got into photoshop</li>
+              <li>Planted the seeds to the idea of leveraging unconventional exams to differentiate myself without internship experience</li>
+              <li>I also picked up Photoshop, and created posters of my favorite musicians as Pokemon cards to sell to my friends</li>
             </ul>
           </li>
-          {/* Education */}
+          {/* Starting of college / beginning of timeline */}
           <li className="mb-10 ml-6">
             <span className="absolute -left-3 flex h-6 w-6 items-center justify-center rounded-full bg-gray-200 ring-8 ring-gray-900" />
             <time className="mb-1 text-sm font-normal leading-none text-gray-500">Sep 2019</time>
@@ -164,6 +179,11 @@ export default function AboutPage() {
         </a>
       </section>
       */}
+
+      {/* ---------------- Footer ---------------- */}
+      <footer className="pt-12 text-sm text-neutral-500">
+        © Ethan Frost — Last updated June 2025 - Built from scratch with Next.js and Tailwind CSS via Cursor
+      </footer>
     </main>
   );
 }
