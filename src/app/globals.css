@@ -5,7 +5,3 @@
 html {
   @apply bg-neutral-950 text-neutral-100;
 }
-
-a {
-  @apply hover:text-white transition-colors;
-}
