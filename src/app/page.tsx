@@ -4,7 +4,7 @@ export default function Home() {
       <h1 className="text-4xl font-semibold tracking-tight">Ethan Frost</h1>
       <p className="text-neutral-400 text-lg">
         I work on tools and systems that bridge analysis and execution.  
-        This site is a quiet archive of work and process — occasionally updated, always mine.
+        This site is a quiet archive of work and process — occasionally updated. Work in progress.
       </p>
 
       <div className="flex gap-4 pt-4">
