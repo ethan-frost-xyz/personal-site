@@ -41,8 +41,10 @@ export default function AboutPage() {
             </h3>
             <p className="text-sm text-gray-400 italic">New York, NY</p>
             <ul className="list-disc list-inside text-sm text-gray-400 space-y-1">
-              <li>Aerospace & Defense and Cybersecurity Team under former FBI Special Agent Trevor J. Walsh</li>
-              <li>See resume for more details</li>
+              <li>Aerospace & Defense and Cybersecurity Team under former FBI Special Agent Trevor J. Walsh.</li>
+              <li>Primarily operating on the A&D coverage where our coverage is focused on next generation disruptive companies.</li>
+              <li>Currently writing an exhaustive industry report on everything drones (UAS, UGS, UUS/USV, c-UAS, etc.) spanning public and private companies.</li>
+              <li>See [SECTION] for more details.</li>
             </ul>
           </li>
           <li className="mb-10 ml-6">
@@ -53,9 +55,9 @@ export default function AboutPage() {
             </h3>
             <p className="text-sm text-gray-400 italic">Burlington, VT</p>
             <ul className="list-disc list-inside text-sm text-gray-400 space-y-1">
-              <li>Developed AI advisor for non-target business students seeking finance careers</li>
-              <li>Conducted user research with students and career advisors to validate concept</li>
-              <li>add why it failed</li>
+              <li>Developed AI advisor for non-target business students seeking finance careers.</li>
+              <li>Conducted user research with students and career advisors to validate concept.</li>
+              <li>add why it failed.</li>
             </ul>
           </li>
          {/* Intern */}
@@ -67,9 +69,9 @@ export default function AboutPage() {
             </h3>
             <p className="text-sm text-gray-400 italic">Burlington, VT</p>
             <ul className="list-disc list-inside text-sm text-gray-400 space-y-1">
-              <li>B.S. Business Administration with a concentration in Finance and Entrepreneurship</li>
-              <li>Minor in Economics, Venture Advisor for <a href="https://www.uvmfoundation.org/s/1690/19/interior.aspx?sid=1690&gid=2&pgid=1582" target="_blank" rel="noopener noreferrer" className="underline hover:text-gray-300">Catamount Innovation Fund</a></li>
-              <li>Won Grossman School of Business Dean's Cup award for Best Speaker (2023)</li>
+              <li>B.S. Business Administration with a concentration in Finance and Entrepreneurship.</li>
+              <li>Minor in Economics, Venture Advisor for <a href="https://www.uvmfoundation.org/s/1690/19/interior.aspx?sid=1690&gid=2&pgid=1582" target="_blank" rel="noopener noreferrer" className="underline hover:text-gray-300">Catamount Innovation Fund</a>, a student-led VC fund.</li>
+              <li>Awarded Grossman School of Business Dean's Cup award for Best Speaker (2023).</li>
             </ul>
           </li>
           <li className="mb-10 ml-6">
@@ -80,8 +82,9 @@ export default function AboutPage() {
             </h3>
             <p className="text-sm text-gray-400 italic">Remote</p>
             <ul className="list-disc list-inside text-sm text-gray-400 space-y-1">
-              <li>Aerospace & Defense and Cybersecurity Team under former FBI special agent Trevor J. Walsh</li>
-              <li>See resume for more details</li>
+              <li>The day after passing CFA L1, I was pointed towards a part-time remote internship supporting the A&D and Cybersecurity team.</li>
+              <li>Laid the foundation for my current role and reputation for automation.</li>
+              <li>Worked well beyond the allocated hours, eventually it paid off being called up full time.</li>
             </ul>
           </li>
           <li className="mb-10 ml-6">
@@ -90,10 +93,11 @@ export default function AboutPage() {
             <h3 className="text-lg font-medium text-gray-100">
               Passed Level 1 CFA Exam
             </h3>
-            <p className="text-sm text-gray-400 italic">Remote</p>
+            <p className="text-sm text-gray-400 italic">Burlington, VT</p>
             <ul className="list-disc list-inside text-sm text-gray-400 space-y-1">
-              <li>Decided to take a traditionally post graduate exam in order to differentiate myself</li>
-              <li>Passed in 95th percentile[LINK], 38% overall pass rate on August 2023 exam Level I Exam</li>
+              <li>Decided to take a traditionally post graduate exam in order to differentiate myself.</li>
+              <li>Passed in <a href="https://www.linkedin.com/posts/ethan-frost-_after-hundreds-of-hours-of-studying-im-activity-7115331297354338304-mK75?utm_source=share&utm_medium=member_desktop&rcm=ACoAADXde_8Bbeuid7YLEreK_3NsZK8R7D4gvgw" target="_blank" rel="noopener noreferrer" className="underline hover:text-gray-300">95th percentile</a>, 37% overall pass rate on August 2023 Level I Exam.</li>
+              <li>Fun fact: I was also working at Jersey Mike's at the time.</li>
             </ul>
           </li>
 
@@ -106,8 +110,9 @@ export default function AboutPage() {
             </h3>
             <p className="text-sm text-gray-400 italic">Berlin, Germany</p>
             <ul className="list-disc list-inside text-sm text-gray-400 space-y-1">
-              <li>Supported investment team at a Berlin-based <a href="https://www.siliconallee.com/" target="_blank" rel="noopener noreferrer" className="underline hover:text-gray-300">deep tech accelerator</a> during my time abroad</li>
-              <li>Widened aperture across startup verticals and sparked my interest in hard tech</li>
+              <li>Right-hand-man to the CEO of a Berlin-based <a href="https://www.siliconallee.com/" target="_blank" rel="noopener noreferrer" className="underline hover:text-gray-300">deep tech accelerator</a> during my time abroad.</li>
+              <li>Primary project was various investment and operations tasks related to raising an SVP for a drone startup angel round.</li>
+              <li>Met countless founders across startup verticals, sparking my passion for hard tech.</li>
             </ul>
           </li>
           {/* Superplastic Internship */}
@@ -119,8 +124,9 @@ export default function AboutPage() {
             </h3>
             <p className="text-sm text-gray-400 italic">Burlington, VT</p>
             <ul className="list-disc list-inside text-sm text-gray-400 space-y-1">
-              <li>Was hired to support the company's Web3 efforts, expanded into a generalist role serving across multiple departments including marketing, sales, partnerships, and Web3 initiatives</li>
-              <li><a href="https://superplastic.co/" target="_blank" rel="noopener noreferrer" className="underline hover:text-gray-300">Superplastic</a> is a entertainment based startup that intertwines physical and digital experiences through digital celebrities</li>
+              <li>Was hired to support the company's Web3 efforts, expanded into a generalist role serving across multiple departments including marketing, sales, partnerships, and Web3 initiatives.</li>
+              <li><a href="https://superplastic.co/" target="_blank" rel="noopener noreferrer" className="underline hover:text-gray-300">Superplastic</a> is a entertainment based startup that intertwines physical and digital experiences through digital celebrities.</li>
+              <li>The experiences below were essential for getting this role.</li>
             </ul>
           </li>
           {/* Defi Exploration */}
@@ -132,10 +138,9 @@ export default function AboutPage() {
             </h3>
             <p className="text-sm text-gray-400 italic">Burlington, VT</p>
             <ul className="list-disc list-inside text-sm text-gray-400 space-y-1">
-              <li>Had been following the space since 2017, with my free time I dove in head first</li>
-              <li>Created an NFT collection with some friends, personally coded the smart contract (ERC-721)</li>
-              <li>Also got certifications from INSEAD and Duke University in Blockchain and DeFi, respectively</li>
-              <li>These experiences were a key driver to getting my first internship at Superplastic</li>
+              <li>Had been following the space since 2017, with my free time I dove in head first.</li>
+              <li>Created an NFT collection with some friends, personally coded the smart contract (ERC-721).</li>
+              <li>Also got certifications from INSEAD and Duke University in Blockchain and DeFi, respectively.</li>
             </ul>
           </li>
           {/* Real Estate License */}
@@ -147,8 +152,8 @@ export default function AboutPage() {
             </h3>
             <p className="text-sm text-gray-400 italic">Burlington, VT</p>
             <ul className="list-disc list-inside text-sm text-gray-400 space-y-1">
-              <li>Planted the seeds to the idea of leveraging unconventional exams to differentiate myself without internship experience</li>
-              <li>I also picked up Photoshop, and created posters of my favorite musicians as Pokemon cards to sell to my friends</li>
+              <li>Planted the seeds to the idea of leveraging unconventional exams to differentiate myself without internship experience.</li>
+              <li>I also picked up Photoshop, and created posters of my favorite musicians as Pokemon cards to sell to my friends.</li>
             </ul>
           </li>
           {/* Starting of college / beginning of timeline */}
@@ -160,7 +165,7 @@ export default function AboutPage() {
             </h3>
             <p className="text-sm text-gray-400 italic">Burlington, VT</p>
             <ul className="list-disc list-inside text-sm text-gray-400 space-y-1">
-              <li>Wanted to do something in business, but was not sure what</li>
+              <li>Wanted to do something in business, but was not sure what.</li>
             </ul>
           </li>
         </ol>
