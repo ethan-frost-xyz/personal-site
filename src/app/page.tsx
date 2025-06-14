@@ -20,10 +20,6 @@ export default function Home() {
           About Me
         </a>
       </div>
-
-      <footer className="pt-12 text-sm text-neutral-500">
-        © Ethan Frost — Last updated June 2025 - Built from scratch with Next.js and Tailwind CSS via Cursor
-      </footer>
     </section>
   )
 }

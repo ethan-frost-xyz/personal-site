@@ -11,7 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body className="bg-neutral-950 text-neutral-100 font-sans antialiased">
+      <body className="bg-neutral-950 text-neutral-100 font-sans antialiased min-h-screen flex flex-col">
         {/* --- top nav ------------------------------------------------------ */}
         <header className="border-b border-neutral-800 px-6 py-4 flex justify-between items-center">
           <Link href="/" className="text-lg font-bold text-white">
@@ -31,6 +31,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 
         {/* --- fixed social icon ------------------------------------------- */}
         <LinkedIn />
+
+        <footer className="mt-auto py-4 text-center text-sm text-neutral-500">
+          © Ethan Frost — Last updated June 2025 - Built from scratch with Next.js and Tailwind CSS via Cursor
+        </footer>
       </body>
     </html>
   )

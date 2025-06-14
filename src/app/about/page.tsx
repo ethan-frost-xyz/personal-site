@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "About – Ethan Frost",
   description:
-    "Timeline résumé, bio, and career highlights for Ethan Frost – analyst at the intersection of finance, defense, and technology.",
+    "Timeline resume, bio, and career highlights for Ethan Frost – analyst at the intersection of finance, defense, and technology.",
 };
 
 export default function AboutPage() {
@@ -13,18 +13,19 @@ export default function AboutPage() {
       <section className="space-y-4">
         <h1 className="text-3xl font-semibold tracking-tight">About</h1>
         <p className="text-lg leading-relaxed">
-          I'm a Vermont‑raised analyst living in New York City, working at the
+          I'm a Vermont‑raised equity research analyst living in New York City, working at the
           intersection of finance, defense, and technology. By day, I cover
-          aerospace and cybersecurity companies, helping translate complex
-          systems and market signals into sharp, actionable analysis. I've
+          next generation aerospace & defense companies, as well as cybersecurity. I've
           always been drawn to tools, ideas, and technologies that change how
-          things get built — especially when the stakes are high.
+          things get built. I pride myself as a life long independent learner.
         </p>
         <p className="text-lg leading-relaxed">
-          My background blends financial rigor with technical fluency, and I
-          gravitate toward problems that don't come with a playbook. Whether
-          it's modeling, writing, or building systems behind the scenes, I'm
-          focused on clarity, speed, and impact.
+          I spent my youth obsessed with getting more with less, particularly
+          in school where I would rather be learning outside than inside the
+          classroom. My background blends financial rigor with technical fluency,
+          and I gravitate toward problems that don't come with a playbook.
+          Whether it's modeling, writing, or building systems behind the scenes,
+          I'm focused on clarity, speed, and impact.
         </p>
       </section>
       {/* ---------------- Timeline ---------------- */}
@@ -144,18 +145,7 @@ export default function AboutPage() {
             </h3>
             <p className="text-sm text-gray-400 italic">Burlington, VT</p>
             <ul className="list-disc list-inside text-sm text-gray-400 space-y-1">
-              <li></li>
-            </ul>
-          </li>
-          <li className="ml-6">
-            <span className="absolute -left-3 flex h-6 w-6 items-center justify-center rounded-full bg-gray-200 ring-8 ring-gray-900" />
-            <time className="mb-1 text-sm font-normal leading-none text-gray-500">Dec 2023</time>
-            <h3 className="text-lg font-medium text-gray-100">
-              Graduated B.S. Business Administration – University of Vermont
-            </h3>
-            <p className="text-sm text-gray-400 italic">Burlington, VT</p>
-            <ul className="list-disc list-inside text-sm text-gray-400 space-y-1">
-              <li>xyz</li>
+              <li>Wanted to do something in business, but was not sure what</li>
             </ul>
           </li>
         </ol>
