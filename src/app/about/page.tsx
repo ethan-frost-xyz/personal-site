@@ -39,8 +39,23 @@ export default function AboutPage() {
               Equity Research Associate – Citizens Capital Markets
             </h3>
             <p className="text-sm text-gray-400 italic">New York, NY</p>
-            <p className="text-sm text-gray-400">Aerospace & Defense and Cybersecurity Team under former FBI special agent Trevor J. Walsh</p>
-            <p className="text-sm text-gray-400">See resume for more details</p>
+            <ul className="list-disc list-inside text-sm text-gray-400 space-y-1">
+              <li>Aerospace & Defense and Cybersecurity Team under former FBI Special Agent Trevor J. Walsh</li>
+              <li>See resume for more details</li>
+            </ul>
+          </li>
+          <li className="mb-10 ml-6">
+            <span className="absolute -left-3 flex h-6 w-6 items-center justify-center rounded-full bg-gray-200 ring-8 ring-gray-900" />
+            <time className="mb-1 text-sm font-normal leading-none text-gray-500">Early 2024</time>
+            <h3 className="text-lg font-medium text-gray-100">
+              GPT Wrapper Project
+            </h3>
+            <p className="text-sm text-gray-400 italic">Burlington, VT</p>
+            <ul className="list-disc list-inside text-sm text-gray-400 space-y-1">
+              <li>Developed AI advisor for non-target business students seeking finance careers</li>
+              <li>Conducted user research with students and career advisors to validate concept</li>
+              <li>add why it failed</li>
+            </ul>
           </li>
          {/* Intern */}
          <li className="mb-10 ml-6">
@@ -50,8 +65,11 @@ export default function AboutPage() {
               Graduated University of Vermont
             </h3>
             <p className="text-sm text-gray-400 italic">Burlington, VT</p>
-            <p className="text-sm text-gray-400">B.S. Business Administration with a concentration in Finance and Entrepreneurship</p>
-            <p className="text-sm text-gray-400">Minor in Economics, Venture Advisor for <a href="https://www.uvmfoundation.org/s/1690/19/interior.aspx?sid=1690&gid=2&pgid=1582" target="_blank" rel="noopener noreferrer" className="underline hover:text-gray-300">Catamount Innovation Fund</a></p>
+            <ul className="list-disc list-inside text-sm text-gray-400 space-y-1">
+              <li>B.S. Business Administration with a concentration in Finance and Entrepreneurship</li>
+              <li>Minor in Economics, Venture Advisor for <a href="https://www.uvmfoundation.org/s/1690/19/interior.aspx?sid=1690&gid=2&pgid=1582" target="_blank" rel="noopener noreferrer" className="underline hover:text-gray-300">Catamount Innovation Fund</a></li>
+              <li>Won Grossman School of Business Dean's Cup award for Best Speaker (2023)</li>
+            </ul>
           </li>
           <li className="mb-10 ml-6">
             <span className="absolute -left-3 flex h-6 w-6 items-center justify-center rounded-full bg-gray-200 ring-8 ring-gray-900" />
@@ -60,17 +78,22 @@ export default function AboutPage() {
               Equity Research Intern – Citizens Capital Markets
             </h3>
             <p className="text-sm text-gray-400 italic">Remote</p>
-            <p className="text-sm text-gray-400">Aerospace & Defense and Cybersecurity Team under former FBI special agent Trevor J. Walsh</p>
-            <p className="text-sm text-gray-400">See resume for more details</p>
+            <ul className="list-disc list-inside text-sm text-gray-400 space-y-1">
+              <li>Aerospace & Defense and Cybersecurity Team under former FBI special agent Trevor J. Walsh</li>
+              <li>See resume for more details</li>
+            </ul>
           </li>
           <li className="mb-10 ml-6">
             <span className="absolute -left-3 flex h-6 w-6 items-center justify-center rounded-full bg-gray-200 ring-8 ring-gray-900" />
-            <time className="mb-1 text-sm font-normal leading-none text-gray-500">August 2023</time>
+            <time className="mb-1 text-sm font-normal leading-none text-gray-500">Summer 2023</time>
             <h3 className="text-lg font-medium text-gray-100">
               Passed Level 1 CFA Exam
             </h3>
             <p className="text-sm text-gray-400 italic">Remote</p>
-            <p className="text-sm text-gray-400">xyz</p>
+            <ul className="list-disc list-inside text-sm text-gray-400 space-y-1">
+              <li>Decided to take a traditionally post graduate exam in order to differentiate myself</li>
+              <li>Passed in 95th percentile[LINK], 38% overall pass rate on August 2023 exam Level I Exam</li>
+            </ul>
           </li>
 
           {/* Study Abroad */}
@@ -78,10 +101,13 @@ export default function AboutPage() {
             <span className="absolute -left-3 flex h-6 w-6 items-center justify-center rounded-full bg-gray-200 ring-8 ring-gray-900" />
             <time className="mb-1 text-sm font-normal leading-none text-gray-500">Aug 2022 to Dec 2022</time>
             <h3 className="text-lg font-medium text-gray-100">
-              Venture Analyst Intern – Silicon Allee (Berlin ISEP Program)
+              Venture Analyst – Silicon Allee
             </h3>
             <p className="text-sm text-gray-400 italic">Berlin, Germany</p>
-            <p className="text-sm text-gray-400">xyz</p>
+            <ul className="list-disc list-inside text-sm text-gray-400 space-y-1">
+              <li>Supported investment team at a Berlin-based <a href="https://www.siliconallee.com/" target="_blank" rel="noopener noreferrer" className="underline hover:text-gray-300">deep tech accelerator</a> during my time abroad</li>
+              <li>Widened aperture across startup verticals and sparked my interest in hard tech</li>
+            </ul>
           </li>
 
           {/* Superplastic Internship */}
@@ -89,21 +115,37 @@ export default function AboutPage() {
             <span className="absolute -left-3 flex h-6 w-6 items-center justify-center rounded-full bg-gray-200 ring-8 ring-gray-900" />
             <time className="mb-1 text-sm font-normal leading-none text-gray-500">Feb 2022 to August 2022</time>
             <h3 className="text-lg font-medium text-gray-100">
-              Generalist Intern – Superplastic
+              Generalist – Superplastic
             </h3>
             <p className="text-sm text-gray-400 italic">Burlington, VT</p>
-            <p className="text-sm text-gray-400">xyz</p>
+            <ul className="list-disc list-inside text-sm text-gray-400 space-y-1">
+              <li>Interned across multiple departments including marketing, sales, partnerships, and Web3 initiatives</li>
+              <li><a href="https://superplastic.co/" target="_blank" rel="noopener noreferrer" className="underline hover:text-gray-300">Superplastic</a> is a entertainment based startup that intertwines physical and digital experiences through digital celebrities</li>
+            </ul>
           </li>
-
+          <li className="mb-10 ml-6">
+            <span className="absolute -left-3 flex h-6 w-6 items-center justify-center rounded-full bg-gray-200 ring-8 ring-gray-900" />
+            <time className="mb-1 text-sm font-normal leading-none text-gray-500">Winter 2020</time>
+            <h3 className="text-lg font-medium text-gray-100">
+              Passed National and State Real Estate License (VT)
+            </h3>
+            <p className="text-sm text-gray-400 italic">Burlington, VT</p>
+            <ul className="list-disc list-inside text-sm text-gray-400 space-y-1">
+              <li>Was looking for a challenge during my winter break</li>
+              <li>Maybe add how i got into photoshop</li>
+            </ul>
+          </li>
           {/* Education */}
           <li className="mb-10 ml-6">
             <span className="absolute -left-3 flex h-6 w-6 items-center justify-center rounded-full bg-gray-200 ring-8 ring-gray-900" />
             <time className="mb-1 text-sm font-normal leading-none text-gray-500">Sep 2019</time>
             <h3 className="text-lg font-medium text-gray-100">
-              Started B.S. Business Administration – University of Vermont
+              Enrolled at the University of Vermont
             </h3>
             <p className="text-sm text-gray-400 italic">Burlington, VT</p>
-            <p className="text-sm text-gray-400">xyz</p>
+            <ul className="list-disc list-inside text-sm text-gray-400 space-y-1">
+              <li></li>
+            </ul>
           </li>
           <li className="ml-6">
             <span className="absolute -left-3 flex h-6 w-6 items-center justify-center rounded-full bg-gray-200 ring-8 ring-gray-900" />
@@ -112,7 +154,9 @@ export default function AboutPage() {
               Graduated B.S. Business Administration – University of Vermont
             </h3>
             <p className="text-sm text-gray-400 italic">Burlington, VT</p>
-            <p className="text-sm text-gray-400">xyz</p>
+            <ul className="list-disc list-inside text-sm text-gray-400 space-y-1">
+              <li>xyz</li>
+            </ul>
           </li>
         </ol>
       </section>

@@ -4,7 +4,7 @@ export default function Home() {
       <h1 className="text-4xl font-semibold tracking-tight">Ethan Frost</h1>
       <p className="text-neutral-400 text-lg">
         I work on tools and systems that bridge analysis and execution.  
-        This site is a quiet archive of work and process — occasionally updated. Work in progress. Most of this text is just AI slop to fill space so dont judge me if it sounds obnoxious.
+        This site is an archive of work and process — occasionally updated. Work in progress. Most of this text is just AI slop to fill space so dont judge me if it sounds obnoxious.
       </p>
 
       <div className="flex gap-4 pt-4">
@@ -23,7 +23,7 @@ export default function Home() {
       </div>
 
       <footer className="pt-12 text-sm text-neutral-500">
-        © Ethan Frost — Last updated June 2025 - Built from scratch with Next.js and Tailwind CSS via Cursor IDE
+        © Ethan Frost — Last updated June 2025 - Built from scratch with Next.js and Tailwind CSS via Cursor
       </footer>
     </section>
   )
