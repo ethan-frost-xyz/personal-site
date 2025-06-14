@@ -82,8 +82,8 @@ export default function AboutPage() {
             </h3>
             <p className="text-sm text-gray-400 italic">Remote</p>
             <ul className="list-disc list-inside text-sm text-gray-400 space-y-1">
-              <li>The day after passing CFA L1, I was pointed towards a part-time remote internship supporting the A&D and Cybersecurity team.</li>
-              <li>Laid the foundation for my current role and reputation for automation.</li>
+              <li>The day after passing CFA L1, I was pointed towards this part-time role.</li>
+              <li>Laid the foundation for my current role and reputation for automation on the team.</li>
               <li>Worked well beyond the allocated hours, eventually it paid off being called up full time.</li>
             </ul>
           </li>
