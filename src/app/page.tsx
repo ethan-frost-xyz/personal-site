@@ -3,7 +3,6 @@ export default function Home() {
     <section className="min-h-[80vh] flex flex-col justify-center items-center text-center space-y-6 max-w-prose mx-auto px-6">
       <h1 className="text-4xl font-semibold tracking-tight">Ethan Frost</h1>
       <p className="text-neutral-400 text-lg">
-        I work on tools and systems that bridge analysis and execution.  
         This site is an archive of work and process — occasionally updated. Work in progress. Most of this text is just AI slop to fill space so dont judge me if it sounds obnoxious.
       </p>
 
