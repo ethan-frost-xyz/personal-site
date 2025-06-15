@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import type { Metadata } from 'next';
 import Button from '../components/ui/button';
+import Card from '../components/ui/card';
 
 export const metadata: Metadata = {
   title: 'Home – Ethan Frost',
@@ -56,27 +57,17 @@ export default function Home() {
         {/* ---------------- Project Teasers ---------------- */}
         <section id="projects" className="space-y-4">
           <h2 className="text-2xl font-semibold">Selected Projects</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Replace with your <ProjectCard /> */}
-            <div className="group relative rounded-2xl border border-neutral-700 p-6 transition-shadow hover:shadow-xl">
-              <h3 className="text-xl font-medium">Launch Efficiency Model</h3>
-              <p className="mt-2 text-sm text-neutral-400">
-                High-fidelity launch efficiency analysis of Rocket Lab using Python.
-              </p>
-              <Link href="/work/rocket-lab-model" className="mt-4 inline-block text-sm underline">
-                Read More →
-              </Link>
-            </div>
-
-            <div className="group relative rounded-2xl border border-neutral-700 p-6 transition-shadow hover:shadow-xl">
-              <h3 className="text-xl font-medium">CCA Opportunity Analysis</h3>
-              <p className="mt-2 text-sm text-neutral-400">
-                Data-driven analysis of the Collaborative Combat Aircraft (CCA) program.
-              </p>
-              <Link href="/work/cca-opportunity-analysis" className="mt-4 inline-block text-sm underline">
-                Read More →
-              </Link>
-            </div>
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+            <Card
+              href="/work/rocket-lab-model"
+              title="Launch Efficiency Model"
+              description="High‑fidelity launch efficiency analysis of Rocket Lab using Python."
+            />
+            <Card
+              href="/work/cca-opportunity-analysis"
+              title="CCA Opportunity Analysis"
+              description="Data‑driven analysis of the Collaborative Combat Aircraft (CCA) program."
+            />
           </div>
         </section>
       </main>
