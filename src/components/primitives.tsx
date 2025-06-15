@@ -14,15 +14,15 @@ import type { HTMLAttributes, ReactNode } from "react";
  * Consistent max‑width container with sane horizontal & vertical padding.
  * You can override padding/margins by passing `className`.
  */
-export function Section({ className, ...props }: HTMLAttributes<HTMLElement>) {
+interface SectionProps extends React.HTMLAttributes<HTMLElement> {
+  id?: string;
+}
+
+export function Section({ id, className, children, ...props }: SectionProps) {
   return (
-    <section
-      className={cn(
-        "mx-auto w-full max-w-screen-xl px-6 py-16", // edit once, affect all
-        className
-      )}
-      {...props}
-    />
+    <section id={id} className={cn("mx-auto max-w-screen-xl px-6 py-16", className)} {...props}>
+      {children}
+    </section>
   );
 }
 
@@ -30,19 +30,25 @@ export function Section({ className, ...props }: HTMLAttributes<HTMLElement>) {
 /*                                 Typography                                 */
 /* -------------------------------------------------------------------------- */
 
-export const H2 = ({ className, ...p }: HTMLAttributes<HTMLHeadingElement>) => (
-  <h2
-    {...p}
-    className={cn("text-2xl font-semibold tracking-tight", className)}
-  />
-);
+interface H2Props extends React.HTMLAttributes<HTMLHeadingElement> {}
 
-export const P = ({ className, ...p }: HTMLAttributes<HTMLParagraphElement>) => (
-  <p
-    {...p}
-    className={cn("leading-relaxed text-neutral-300", className)}
-  />
-);
+export function H2({ className, children, ...props }: H2Props) {
+  return (
+    <h2 className={cn("text-2xl font-semibold", className)} {...props}>
+      {children}
+    </h2>
+  );
+}
+
+interface PProps extends React.HTMLAttributes<HTMLParagraphElement> {}
+
+export function P({ className, children, ...props }: PProps) {
+  return (
+    <p className={cn("text-lg leading-relaxed", className)} {...props}>
+      {children}
+    </p>
+  );
+}
 
 export const Muted = ({ className, ...p }: HTMLAttributes<HTMLSpanElement>) => (
   <span

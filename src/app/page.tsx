@@ -14,11 +14,10 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <main className="mx-auto max-w-screen-xl px-6 py-16 space-y-24">
+      <main className="space-y-24">
         {/* ---------------- Hero Section ---------------- */}
         <section id="hero" className="flex flex-col items-center text-center space-y-6">
           <div className="relative">
-            {/* Placeholder for headshot */}
             <div className="absolute -inset-2 rounded-full bg-neutral-700/50" />
             <Image
               src={headshot}
@@ -30,10 +29,9 @@ export default function Home() {
             />
           </div>
           <h1 className="text-5xl font-semibold tracking-tight">Ethan Frost</h1>
-          <p className="max-w-2xl text-lg text-neutral-400">
-            Artificial Intelligence, Equity Research, and Defense Technology.
-            Project underconstruction. Please excuse the AI slop.
-          </p>
+          <P className="max-w-2xl mx-auto">
+            Artificial Intelligence, Equity Research, and Defense Technology. Project underconstruction. Please excuse the AI slop.
+          </P>
           {/* ---------------- Navigation Buttons ---------------- */}
           <div className="flex gap-4">
             <Link href="/work">
@@ -45,19 +43,19 @@ export default function Home() {
           </div>
         </section>
         {/* ---------------- Introduction ---------------- */}
-        <section className="space-y-2">
-          <p className="text-lg leading-relaxed">
+        <Section id="introduction">
+          <P>
             I'm a Vermont‑raised equity research analyst living in New York City, working at the
             intersection of finance, defense, and technology. By day, I cover
             next generation aerospace & defense companies, as well as cybersecurity. I've
             always been drawn to tools, ideas, and technologies that change how
             things get built. I pride myself as a life long independent learner.
-          </p>
-        </section>
+          </P>
+        </Section>
 
         {/* ---------------- Project Teasers ---------------- */}
-        <section id="projects" className="space-y-4">
-          <h2 className="text-2xl font-semibold">Selected Projects</h2>
+        <Section id="projects" className="space-y-4">
+          <H2>Selected Projects</H2>
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
             <Card
               href="/work/rocket-lab-model"
@@ -70,7 +68,7 @@ export default function Home() {
               description="Data‑driven analysis of the Collaborative Combat Aircraft (CCA) program."
             />
           </div>
-        </section>
+        </Section>
       </main>
 
       {/* ---------------- Footer ---------------- */}
