@@ -2,9 +2,8 @@ import headshot from '../components/headshot.jpeg';
 import Link from 'next/link';
 import Image from 'next/image';
 import type { Metadata } from 'next';
-import Button from '../components/ui/button';
-import Card from '../components/ui/card';
-import { Section, H2, P } from "../components/primitives"
+import Card from '@/components/ui/card';
+import { Section, H2, P, Button } from "../components/primitives"
 
 export const metadata: Metadata = {
   title: 'Home – Ethan Frost',
@@ -34,12 +33,12 @@ export default function Home() {
           </P>
           {/* ---------------- Navigation Buttons ---------------- */}
           <div className="flex gap-4">
-            <Link href="/work">
-              <Button>View Work</Button>
-            </Link>
-            <Link href="/about">
-              <Button>About Me</Button>
-            </Link>
+            <Button asChild variant="secondary">
+              <Link href="/about">About Me</Link>
+            </Button>
+            <Button asChild variant="secondary">
+              <Link href="/work">View Work</Link>
+            </Button>
           </div>
         </section>
         {/* ---------------- Introduction ---------------- */}
