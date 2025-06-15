@@ -4,6 +4,7 @@ import Image from 'next/image';
 import type { Metadata } from 'next';
 import Button from '../components/ui/button';
 import Card from '../components/ui/card';
+import { Section, H2, P } from "../components/primitives"
 
 export const metadata: Metadata = {
   title: 'Home – Ethan Frost',
