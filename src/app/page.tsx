@@ -1,5 +1,6 @@
-import Image from 'next/image';
+import headshot from '../components/headshot.jpeg';
 import Link from 'next/link';
+import Image from 'next/image';
 import type { Metadata } from 'next';
 import Button from '../components/ui/button';
 
@@ -18,11 +19,12 @@ export default function Home() {
             {/* Placeholder for headshot */}
             <div className="absolute -inset-2 rounded-full bg-neutral-700/50" />
             <Image
-              src="/me-headshot.jpg"
+              src={headshot}
               alt="Ethan Frost"
               width={200}
               height={200}
-              className="rounded-full"
+              className="rounded-full relative z-10 aspect-square object-cover"
+              priority
             />
           </div>
           <h1 className="text-5xl font-semibold tracking-tight">Ethan Frost</h1>
