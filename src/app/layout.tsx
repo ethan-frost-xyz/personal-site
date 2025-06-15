@@ -1,6 +1,6 @@
 import './globals.css'
 import type { ReactNode } from 'react'
-import LinkedIn from '../components/LinkedIn'
+import LinkedIn from '../components/linkedin'
 import { Navbar } from '../components/ui/navbar'
 
 export const metadata = {
