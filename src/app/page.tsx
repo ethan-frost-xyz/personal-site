@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { GlowingEffect } from '../components/GlowingEffect';
 import type { Metadata } from 'next';
+import Button from '../components/ui/button';
 
 export const metadata: Metadata = {
   title: 'Home – Ethan Frost',
@@ -32,30 +32,24 @@ export default function Home() {
           </p>
           {/* ---------------- Navigation Buttons ---------------- */}
           <div className="flex gap-4">
-            <Link
-              href="/work"
-              className="px-4 py-2 bg-neutral-200 text-black font-medium rounded hover:bg-black hover:text-white transition"
-            >
-              View Work
+            <Link href="/work">
+              <Button>View Work</Button>
             </Link>
-            <Link
-              href="/about"
-              className="px-4 py-2 bg-neutral-200 text-black font-medium rounded hover:bg-black hover:text-white transition"
-            >
-              About Me
+            <Link href="/about">
+              <Button>About Me</Button>
             </Link>
           </div>
         </section>
         {/* ---------------- Introduction ---------------- */}
         <section className="space-y-2">
-        <p className="text-lg leading-relaxed">
-          I'm a Vermont‑raised equity research analyst living in New York City, working at the
-          intersection of finance, defense, and technology. By day, I cover
-          next generation aerospace & defense companies, as well as cybersecurity. I've
-          always been drawn to tools, ideas, and technologies that change how
-          things get built. I pride myself as a life long independent learner.
-        </p>
-      </section>
+          <p className="text-lg leading-relaxed">
+            I'm a Vermont‑raised equity research analyst living in New York City, working at the
+            intersection of finance, defense, and technology. By day, I cover
+            next generation aerospace & defense companies, as well as cybersecurity. I've
+            always been drawn to tools, ideas, and technologies that change how
+            things get built. I pride myself as a life long independent learner.
+          </p>
+        </section>
 
         {/* ---------------- Project Teasers ---------------- */}
         <section id="projects" className="space-y-4">
