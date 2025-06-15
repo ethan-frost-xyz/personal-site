@@ -28,6 +28,7 @@ export default function Home() {
           <h1 className="text-5xl font-semibold tracking-tight">Ethan Frost</h1>
           <p className="max-w-2xl text-lg text-neutral-400">
             Artificial Intelligence, Equity Research, and Defense Technology.
+            Project underconstruction. Please excuse the AI slop.
           </p>
           {/* ---------------- Navigation Buttons ---------------- */}
           <div className="flex gap-4">
@@ -66,7 +67,7 @@ export default function Home() {
               <p className="mt-2 text-sm text-neutral-400">
                 High-fidelity launch efficiency analysis of Rocket Lab using Python.
               </p>
-              <Link href="/work/rocket-lab" className="mt-4 inline-block text-sm underline">
+              <Link href="/work/rocket-lab-model" className="mt-4 inline-block text-sm underline">
                 Read More →
               </Link>
             </div>
@@ -76,7 +77,7 @@ export default function Home() {
               <p className="mt-2 text-sm text-neutral-400">
                 Data-driven analysis of the Collaborative Combat Aircraft (CCA) program.
               </p>
-              <Link href="/work/govcon-contracts" className="mt-4 inline-block text-sm underline">
+              <Link href="/work/cca-opportunity-analysis" className="mt-4 inline-block text-sm underline">
                 Read More →
               </Link>
             </div>
