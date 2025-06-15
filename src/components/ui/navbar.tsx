@@ -5,9 +5,9 @@ import {
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-} from "@/components/ui/navigation-menu";
+} from "./navigation-menu";
 import Link from "next/link";
-import { cn } from "@/lib/utils";
+import { cn } from "../../lib/utils";
 
 const item = cn(
   "inline-flex items-center justify-center rounded-md px-4 py-2 text-sm font-medium",
