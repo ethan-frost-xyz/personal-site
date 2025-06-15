@@ -7,6 +7,7 @@ import * as React from "react";
 import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 import type { HTMLAttributes } from "react";
+import type { ElementType } from "react"
 
 /* -------------------------------------------------------------------------- */
 /*                                   Section                                  */
@@ -92,10 +93,10 @@ export interface ButtonProps
 
 export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   ({ className, variant, size, asChild = false, ...props }, ref) => {
-    const Comp: any = asChild ? Slot : "button";
+    const Comp: ElementType = asChild ? Slot : "button"
     return (
       <Comp
-        ref={ref}
+        ref={ref as React.Ref<HTMLButtonElement>}
         className={cn(buttonVariants({ variant, size }), className)}
         {...props}
       />

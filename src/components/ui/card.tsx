@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { cn } from "@/lib/utils";
-import { forwardRef } from "react";
+import React, { forwardRef, type ForwardedRef } from "react";
 
 export interface CardProps {
   href?: string;
@@ -16,7 +16,7 @@ export interface CardProps {
  * Otherwise it's a static div—perfect for wrapping in a Modal trigger.
  */
 const Card = forwardRef<HTMLAnchorElement | HTMLDivElement, CardProps>(
-  ({ href, title, description, className, ...rest }, ref) => {
+  ({ href, title, description, className, ...rest }, ref: ForwardedRef<HTMLAnchorElement | HTMLDivElement>) => {
     const inner = (
       <>
         <h3 className="text-xl font-medium">{title}</h3>
@@ -33,11 +33,11 @@ const Card = forwardRef<HTMLAnchorElement | HTMLDivElement, CardProps>(
     );
 
     return href ? (
-      <Link href={href} ref={ref as any} className={shared} {...rest}>
+      <Link href={href} ref={ref as ForwardedRef<HTMLAnchorElement>} className={shared} {...rest}>
         {inner}
       </Link>
     ) : (
-      <div ref={ref as any} className={shared} {...rest}>
+      <div ref={ref as ForwardedRef<HTMLDivElement>} className={shared} {...rest}>
         {inner}
       </div>
     );

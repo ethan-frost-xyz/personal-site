@@ -3,7 +3,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import type { Metadata } from 'next';
 import Card from '@/components/ui/card';
-import { Modal } from '@/components/ui/modal';
 import { Section, H2, P, Button } from "../components/primitives"
 import {Dialog, DialogTrigger, DialogContent, DialogHeader, DialogTitle, DialogDescription} from "@/components/ui/dialog"
 
@@ -46,9 +45,9 @@ export default function Home() {
         {/* ---------------- Introduction ---------------- */}
         <Section id="introduction">
           <P>
-            I'm a Vermont‑raised equity research analyst living in New York City, working at the
+            I&apos;m a Vermont‑raised equity research analyst living in New York City, working at the
             intersection of finance, defense, and technology. By day, I cover
-            next generation aerospace & defense companies, as well as cybersecurity. I've
+            next generation aerospace & defense companies, as well as cybersecurity. I&apos;ve
             always been drawn to tools, ideas, and technologies that change how
             things get built. I pride myself as a life long independent learner.
           </P>
@@ -106,14 +105,14 @@ export default function Home() {
                     CCA Opportunity Analysis
                   </DialogTitle>
                   <DialogDescription className="text-sm text-neutral-400">
-                    Data-driven view of the Collaborative Combat Aircraft market.
+                    Data-driven analysis of the Collaborative Combat Aircraft (CCA) program.
                   </DialogDescription>
                 </DialogHeader>
 
                 <P className="mt-4">
-                  Using DoD budget docs and open-source flight-test data, I mapped addressable
+                  Using DoD budget docs and open-source flight-test data, war games findings, mapped addressable
                   spending across autonomy software, airframes, and munitions for CCA. Result:
-                  a bottom-up TAM of ≈ $17 B by FY30—well above consensus sell-side models.
+                  xyz
                 </P>
 
                 <Button asChild variant="secondary" size="sm" className="mt-6">

@@ -13,9 +13,9 @@ export default function AboutPage() {
       <section className="space-y-4">
         <h1 className="text-3xl font-semibold tracking-tight">About</h1>
         <p className="text-lg leading-relaxed">
-          I'm a Vermont‑raised equity research analyst living in New York City, working at the
+          I&apos;m a Vermont‑raised equity research analyst living in New York City, working at the
           intersection of finance, defense, and technology. By day, I cover
-          next generation aerospace & defense companies, as well as cybersecurity. I've
+          next generation aerospace & defense companies, as well as cybersecurity. I&apos;ve
           always been drawn to tools, ideas, and technologies that change how
           things get built. I pride myself as a life long independent learner.
         </p>
@@ -23,9 +23,9 @@ export default function AboutPage() {
           I spent my youth obsessed with getting more with less, particularly
           in school where I would rather be learning outside than inside the
           classroom. My background blends financial rigor with technical fluency,
-          and I gravitate toward problems that don't come with a playbook.
-          Whether it's modeling, writing, or building systems behind the scenes,
-          I'm focused on clarity, speed, and impact.
+          and I gravitate toward problems that don&apos;t come with a playbook.
+          Whether it&apos;s modeling, writing, or building systems behind the scenes,
+          I&apos;m focused on clarity, speed, and impact.
         </p>
       </section>
       {/* ---------------- Timeline ---------------- */}
@@ -71,7 +71,7 @@ export default function AboutPage() {
             <ul className="list-disc list-inside text-sm text-gray-400 space-y-1">
               <li>B.S. Business Administration with a concentration in Finance and Entrepreneurship.</li>
               <li>Minor in Economics, Venture Advisor for <a href="https://www.uvmfoundation.org/s/1690/19/interior.aspx?sid=1690&gid=2&pgid=1582" target="_blank" rel="noopener noreferrer" className="underline hover:text-gray-300">Catamount Innovation Fund</a>, a student-led VC fund.</li>
-              <li>Awarded Grossman School of Business Dean's Cup award for Best Speaker (2023).</li>
+              <li>Awarded Grossman School of Business Dean&apos;s Cup award for Best Speaker (2023).</li>
             </ul>
           </li>
           <li className="mb-10 ml-6">
@@ -97,7 +97,7 @@ export default function AboutPage() {
             <ul className="list-disc list-inside text-sm text-gray-400 space-y-1">
               <li>Decided to take a traditionally post graduate exam in order to differentiate myself.</li>
               <li>Passed in <a href="https://www.linkedin.com/posts/ethan-frost-_after-hundreds-of-hours-of-studying-im-activity-7115331297354338304-mK75?utm_source=share&utm_medium=member_desktop&rcm=ACoAADXde_8Bbeuid7YLEreK_3NsZK8R7D4gvgw" target="_blank" rel="noopener noreferrer" className="underline hover:text-gray-300">95th percentile</a>, 37% overall pass rate on August 2023 Level I Exam.</li>
-              <li>Fun fact: I was also working at Jersey Mike's at the time.</li>
+              <li>Fun fact: I was also working at Jersey Mike&apos;s at the time.</li>
             </ul>
           </li>
 
@@ -124,7 +124,7 @@ export default function AboutPage() {
             </h3>
             <p className="text-sm text-gray-400 italic">Burlington, VT</p>
             <ul className="list-disc list-inside text-sm text-gray-400 space-y-1">
-              <li>Was hired to support the company's Web3 efforts, expanded into a generalist role serving across multiple departments including marketing, sales, partnerships, and Web3 initiatives.</li>
+              <li>Was hired to support the company&apos;s Web3 efforts, expanded into a generalist role serving across multiple departments including marketing, sales, partnerships, and Web3 initiatives.</li>
               <li><a href="https://superplastic.co/" target="_blank" rel="noopener noreferrer" className="underline hover:text-gray-300">Superplastic</a> is a entertainment based startup that intertwines physical and digital experiences through digital celebrities.</li>
               <li>The experiences below were essential for getting this role.</li>
             </ul>
