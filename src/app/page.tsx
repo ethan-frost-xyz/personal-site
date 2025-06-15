@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <main className="space-y-24">
+      <main className="space-y-6">
         {/* ---------------- Hero Section ---------------- */}
         <section id="hero" className="flex flex-col items-center text-center space-y-6">
           <div className="relative">
@@ -43,7 +43,7 @@ export default function Home() {
           </div>
         </section>
         {/* ---------------- Introduction ---------------- */}
-        <Section id="introduction">
+        <Section id="introduction" className='py-4'>
           <P>
             I&apos;m a Vermont‑raised equity research analyst living in New York City, working at the
             intersection of finance, defense, and technology. By day, I cover
@@ -54,7 +54,7 @@ export default function Home() {
         </Section>
 
         {/* ---------------- Project Teasers ---------------- */}
-        <Section id="projects" className="space-y-4">
+        <Section id="projects" className="space-y-4 py-4">
           <H2>Selected Projects</H2>
 
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
