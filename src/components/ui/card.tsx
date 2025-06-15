@@ -1,28 +1,48 @@
 "use client";
 
-import { forwardRef } from "react";
 import Link from "next/link";
-import { cn } from "../../lib/utils";
+import { cn } from "@/lib/utils";
+import { forwardRef } from "react";
 
-interface CardProps {
-  href: string;
+export interface CardProps {
+  href?: string;
   title: string;
   description: string;
   className?: string;
 }
 
-export default function Card({ href, title, description, className }: CardProps) {
-  return (
-    <Link
-      href={href}
-      className={cn(
-        "group relative rounded-2xl border border-neutral-700 p-6 transition-shadow hover:shadow-xl",
-        className
-      )}
-    >
-      <h3 className="text-xl font-medium">{title}</h3>
-      <p className="mt-2 text-sm text-neutral-400">{description}</p>
-      <span className="mt-4 inline-block text-sm underline">Read More →</span>
-    </Link>
-  );
-}
+/**
+ * Reusable content card. Accepts an optional `href`; when present it renders as a clickable <Link>.
+ * Otherwise it's a static div—perfect for wrapping in a Modal trigger.
+ */
+const Card = forwardRef<HTMLAnchorElement | HTMLDivElement, CardProps>(
+  ({ href, title, description, className, ...rest }, ref) => {
+    const inner = (
+      <>
+        <h3 className="text-xl font-medium">{title}</h3>
+        <p className="mt-2 text-sm text-neutral-400">{description}</p>
+        {href && (
+          <span className="mt-4 inline-block text-sm underline">Read More →</span>
+        )}
+      </>
+    );
+
+    const shared = cn(
+      "group relative rounded-2xl border border-neutral-700 p-6 transition-shadow hover:shadow-xl cursor-pointer",
+      className
+    );
+
+    return href ? (
+      <Link href={href} ref={ref as any} className={shared} {...rest}>
+        {inner}
+      </Link>
+    ) : (
+      <div ref={ref as any} className={shared} {...rest}>
+        {inner}
+      </div>
+    );
+  }
+);
+Card.displayName = "Card";
+
+export default Card;
