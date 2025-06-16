@@ -65,13 +65,7 @@ export default function Home() {
             <Dialog>
               <DialogTrigger asChild>
                 <div className="relative rounded-2xl">
-                  <GlowingEffect 
-                    disabled={false} 
-                    glow={true} 
-                    className="rounded-2xl"
-                    borderWidth={1}
-                    spread={30}
-                  />
+                  <GlowingEffect disabled={false} glow={true} className="rounded-2xl" />
                   <Card
                     title="Launch Efficiency Model"
                     description="High-fidelity launch efficiency analysis of Rocket Lab using Python."
@@ -92,13 +86,7 @@ export default function Home() {
             <Dialog>
               <DialogTrigger asChild>
                 <div className="relative rounded-2xl">
-                  <GlowingEffect 
-                    disabled={false} 
-                    glow={true} 
-                    className="rounded-2xl"
-                    borderWidth={1}
-                    spread={30}
-                  />
+                  <GlowingEffect disabled={false} glow={true} className="rounded-2xl" />
                   <Card
                     title="CCA Opportunity Analysis"
                     description="Data-driven analysis of the Collaborative Combat Aircraft (CCA) program."
