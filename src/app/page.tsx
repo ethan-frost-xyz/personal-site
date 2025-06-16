@@ -6,6 +6,7 @@ import Card from '@/components/ui/card';
 import { Section, H2, P, Button } from "../components/primitives"
 import {Dialog, DialogTrigger} from "@/components/ui/dialog"
 import { AnimatedDialogContent } from "@/components/AnimatedDialogContent"
+import { GlowingEffect } from "@/components/ui/glowing-effect"
 
 export const metadata: Metadata = {
   title: 'Home – Ethan Frost',
@@ -63,10 +64,19 @@ export default function Home() {
             {/* ---- Rocket Lab --------------------------------------------------- */}
             <Dialog>
               <DialogTrigger asChild>
-                <Card
-                  title="Launch Efficiency Model"
-                  description="High-fidelity launch efficiency analysis of Rocket Lab using Python."
-                />
+                <div className="relative rounded-2xl">
+                  <GlowingEffect 
+                    disabled={false} 
+                    glow={true} 
+                    className="rounded-2xl"
+                    borderWidth={1}
+                    spread={30}
+                  />
+                  <Card
+                    title="Launch Efficiency Model"
+                    description="High-fidelity launch efficiency analysis of Rocket Lab using Python."
+                  />
+                </div>
               </DialogTrigger>
 
               <AnimatedDialogContent
@@ -81,10 +91,19 @@ export default function Home() {
             {/* ---- CCA Opportunity --------------------------------------------- */}
             <Dialog>
               <DialogTrigger asChild>
-                <Card
-                  title="CCA Opportunity Analysis"
-                  description="Data-driven analysis of the Collaborative Combat Aircraft (CCA) program."
-                />
+                <div className="relative rounded-2xl">
+                  <GlowingEffect 
+                    disabled={false} 
+                    glow={true} 
+                    className="rounded-2xl"
+                    borderWidth={1}
+                    spread={30}
+                  />
+                  <Card
+                    title="CCA Opportunity Analysis"
+                    description="Data-driven analysis of the Collaborative Combat Aircraft (CCA) program."
+                  />
+                </div>
               </DialogTrigger>
 
               <AnimatedDialogContent

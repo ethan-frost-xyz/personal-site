@@ -28,7 +28,7 @@ const Card = forwardRef<HTMLAnchorElement | HTMLDivElement, CardProps>(
     );
 
     const shared = cn(
-      "group relative rounded-2xl border border-neutral-700 p-6 transition-shadow hover:shadow-xl cursor-pointer",
+      "group relative rounded-2xl border border-neutral-700 p-6 transition-shadow hover:shadow-xl cursor-pointer bg-background",
       className
     );
 
