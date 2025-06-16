@@ -4,7 +4,9 @@ import Image from 'next/image';
 import type { Metadata } from 'next';
 import Card from '@/components/ui/card';
 import { Section, H2, P, Button } from "../components/primitives"
+import { motion } from "framer-motion"
 import {Dialog, DialogTrigger, DialogContent, DialogHeader, DialogTitle, DialogDescription} from "@/components/ui/dialog"
+import { AnimatedDialogContent } from "@/components/AnimatedDialogContent"
 
 export const metadata: Metadata = {
   title: 'Home – Ethan Frost',
@@ -67,27 +69,13 @@ export default function Home() {
                 />
               </DialogTrigger>
 
-              <DialogContent className="max-w-xl rounded-2xl border border-neutral-700 bg-neutral-900 p-6">
-                <DialogHeader>
-                  <DialogTitle className="text-lg font-semibold">
-                    Launch Efficiency Model
-                  </DialogTitle>
-                  <DialogDescription className="text-sm text-neutral-400">
-                    High-fidelity launch efficiency analysis of Rocket Lab.
-                  </DialogDescription>
-                </DialogHeader>
-
-                <P className="mt-4">
-                  I built a pandas pipeline that ingests launch logs, normalises cadence, and
-                  benchmarks Rocket Lab against ULA, SpaceX, and Arianespace. The model surfaces
-                  efficiency deltas in both mass-to-orbit and turnaround time, driving a more nuanced
-                  revenue forecast.
-                </P>
-
-                <Button asChild variant="secondary" size="sm" className="mt-6">
-                  <Link href="/work/rocket-lab-model">Read full case →</Link>
-                </Button>
-              </DialogContent>
+              <AnimatedDialogContent
+                title="Launch Efficiency Model"
+                description="High-fidelity launch efficiency analysis of Rocket Lab."
+                content="I built a pandas pipeline that ingests launch logs, normalises cadence, and benchmarks Rocket Lab against ULA, SpaceX, and Arianespace. The model surfaces efficiency deltas in both mass-to-orbit and turnaround time, driving a more nuanced revenue forecast."
+                linkHref="/work/rocket-lab-model"
+                linkText="Read full case →"
+              />
             </Dialog>
 
             {/* ---- CCA Opportunity --------------------------------------------- */}
@@ -99,26 +87,13 @@ export default function Home() {
                 />
               </DialogTrigger>
 
-              <DialogContent className="max-w-xl rounded-2xl border border-neutral-700 bg-neutral-900 p-6">
-                <DialogHeader>
-                  <DialogTitle className="text-lg font-semibold">
-                    CCA Opportunity Analysis
-                  </DialogTitle>
-                  <DialogDescription className="text-sm text-neutral-400">
-                    Data-driven analysis of the Collaborative Combat Aircraft (CCA) program.
-                  </DialogDescription>
-                </DialogHeader>
-
-                <P className="mt-4">
-                  Using DoD budget docs and open-source flight-test data, war games findings, mapped addressable
-                  spending across autonomy software, airframes, and munitions for CCA. Result:
-                  xyz
-                </P>
-
-                <Button asChild variant="secondary" size="sm" className="mt-6">
-                  <Link href="/work/cca-opportunity-analysis">Read full case →</Link>
-                </Button>
-              </DialogContent>
+              <AnimatedDialogContent
+                title="CCA Opportunity Analysis"
+                description="Data-driven analysis of the Collaborative Combat Aircraft (CCA) program."
+                content="Using DoD budget docs and open-source flight-test data, war games findings, mapped addressable spending across autonomy software, airframes, and munitions for CCA."
+                linkHref="/work/cca-opportunity-analysis"
+                linkText="Read full case →"
+              />
             </Dialog>
           </div>
         </Section>
