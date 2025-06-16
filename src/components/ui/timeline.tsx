@@ -35,34 +35,33 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
 
   return (
     <div
-      className="w-full bg-neutral-950 font-sans"
+      className="w-full font-sans"
       ref={containerRef}
     >
       <div ref={ref} className="relative max-w-7xl mx-auto pb-20">
         {data.map((item, index) => (
           <div
             key={index}
-            className="flex justify-start pt-10 md:pt-20 md:gap-10"
+            className="flex flex-col pt-10 md:pt-20"
           >
-            <div className="sticky flex flex-col md:flex-row z-30 items-center top-24 self-start max-w-xs lg:max-w-sm md:w-full">
-              <div className="h-10 absolute left-3 md:left-3 w-10 rounded-full bg-neutral-900 flex items-center justify-center">
+            <div className="flex items-start gap-4 mb-4">
+              <div className="h-10 w-10 rounded-full bg-neutral-800/80 flex items-center justify-center shrink-0 relative z-10">
                 <div className="h-4 w-4 rounded-full bg-neutral-800 border border-neutral-700 p-2" />
               </div>
-              <h3 className="hidden md:block text-xl md:pl-20 md:text-2xl font-medium text-neutral-100">
-                {item.title}
-              </h3>
+              <div className="flex-1">
+                <h3 className="text-xl md:text-2xl font-medium text-neutral-100">
+                  {item.title}
+                </h3>
+                {item.date && (
+                  <p className="text-sm text-neutral-500">{item.date}</p>
+                )}
+                {item.location && (
+                  <p className="text-sm text-neutral-500 italic">{item.location}</p>
+                )}
+              </div>
             </div>
 
-            <div className="relative pl-20 pr-4 md:pl-4 w-full">
-              <h3 className="md:hidden block text-xl mb-4 text-left font-medium text-neutral-100">
-                {item.title}
-              </h3>
-              {item.date && (
-                <p className="text-sm text-neutral-500 mb-1">{item.date}</p>
-              )}
-              {item.location && (
-                <p className="text-sm text-neutral-500 italic mb-2">{item.location}</p>
-              )}
+            <div className="pl-14 w-full">
               {item.content}
             </div>
           </div>
@@ -71,7 +70,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
           style={{
             height: height + "px",
           }}
-          className="absolute md:left-8 left-8 top-0 overflow-hidden w-[2px] bg-[linear-gradient(to_bottom,var(--tw-gradient-stops))] from-transparent from-[0%] via-neutral-700 to-transparent to-[99%] [mask-image:linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)]"
+          className="absolute left-[19px] top-0 overflow-hidden w-[2px] bg-[linear-gradient(to_bottom,var(--tw-gradient-stops))] from-transparent from-[0%] via-neutral-700 to-transparent to-[99%] [mask-image:linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)] z-0"
         >
           <motion.div
             style={{

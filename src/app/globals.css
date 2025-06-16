@@ -2,9 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Fallback if custom properties aren’t parsed yet */
+/* Fallback if custom properties aren't parsed yet */
 html {
   @apply bg-neutral-950 text-neutral-100;
+  background: rgb(23, 23, 23);
+  background-image: radial-gradient(ellipse 80% 80% at 50% -20%, rgba(120, 119, 198, 0.3), rgba(255, 255, 255, 0));
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+body {
+  @apply text-foreground;
+  min-height: 100vh;
+  position: relative;
+  background: transparent;
 }
 
 /* ------------------------------------------------------------------------ */
@@ -53,7 +64,7 @@ html {
 
   /* -------- Dark theme (adds `class="dark"` to <html>) -------- */
   .dark {
-    --background: 0 0% 3.9%;
+    --background: 0 0% 9%;
     --foreground: 0 0% 98%;
 
     --card: 0 0% 3.9%;
