@@ -48,7 +48,8 @@ export default function Home() {
           <P>
             I&apos;m a Vermont‑raised equity research analyst living in New York City, working at the
             intersection of finance, defense, and technology. By day, I cover
-            next generation aerospace & defense companies, as well as cybersecurity. I&apos;ve
+            next generation aerospace & defense companies, as well as cybersecurity. By night,
+            I slam jbls and bump gunner with the bros. I&apos;ve
             always been drawn to tools, ideas, and technologies that change how
             things get built. I pride myself as a life long independent learner.
           </P>

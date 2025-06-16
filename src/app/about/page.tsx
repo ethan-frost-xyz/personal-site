@@ -153,7 +153,7 @@ export default function AboutPage() {
       </Section>
 
       {/* ---------------- Timeline ---------------- */}
-      <Section className="pt-0 pb-44">
+      <Section className="pt-0 pb-42">
         <div className="bg-neutral-900/70 rounded-2xl p-6 backdrop-blur-sm">
           <h2 className="sr-only">Career & Education Timeline</h2>
           <Timeline data={timelineData} />
