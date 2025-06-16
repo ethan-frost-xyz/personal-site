@@ -131,7 +131,7 @@ const timelineData = [
 
 export default function AboutPage() {
   return (
-    <main className="mx-auto max-w-screen-lg px-4 py-12 space-y-6">
+    <main className="mx-auto w-[95%] md:max-w-screen-lg px-2 md:px-4 py-12 space-y-6">
       {/* ---------------- Bio ---------------- */}
       <Section className="space-y-4 py-4">
         <H2>About</H2>
