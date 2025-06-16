@@ -24,7 +24,7 @@ export default function Page() {
         <Card
           title="LinkedIn"
           description="Connect professionally"
-          href="https://linkedin.com/in/your-profile"
+          href="https://www.linkedin.com/in/ethan-frost-/"
         />
 
         {/* Twitter Section */}
@@ -38,13 +38,13 @@ export default function Page() {
         <Card
           title="GitHub"
           description="Check out my code"
-          href="https://github.com/your-username"
+          href="https://github.com/ethan-frost-xyz"
         />
       </div>
 
       <Section>
         <P className="text-sm text-neutral-500">
-          I typically respond to emails within 24-48 hours. For urgent matters, please indicate so in the subject line.
+          I typically respond to emails within 24 hours. For urgent matters, please indicate so in the subject line.
         </P>
       </Section>
     </main>

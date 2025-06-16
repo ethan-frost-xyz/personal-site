@@ -1,5 +1,6 @@
 import Card from '@/components/ui/card';
 import { Section, H2, P } from "@/components/primitives";
+import Link from 'next/link';
 
 export default function Page() {
   return (
