@@ -18,14 +18,14 @@ export default function Home() {
       <main className="space-y-6">
         {/* ---------------- Hero Section ---------------- */}
         <section id="hero" className="flex flex-col items-center text-center space-y-6">
-          <div className="relative">
-            <div className="absolute -inset-2 rounded-full bg-neutral-700/50" />
+          <div className="relative group">
+            <div className="absolute -inset-2 rounded-full bg-neutral-700/50 transition-all duration-300 group-hover:bg-neutral-600/50 group-hover:shadow-[0_0_20px_rgba(255,255,255,0.1)]" />
             <Image
               src={headshot}
               alt="Ethan Frost"
               width={200}
               height={200}
-              className="rounded-full relative z-10 aspect-square object-cover"
+              className="rounded-full relative z-10 aspect-square object-cover transition-transform duration-300 group-hover:scale-[1.02]"
               priority
             />
           </div>
