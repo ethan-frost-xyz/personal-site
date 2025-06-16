@@ -4,8 +4,7 @@ import Image from 'next/image';
 import type { Metadata } from 'next';
 import Card from '@/components/ui/card';
 import { Section, H2, P, Button } from "../components/primitives"
-import { motion } from "framer-motion"
-import {Dialog, DialogTrigger, DialogContent, DialogHeader, DialogTitle, DialogDescription} from "@/components/ui/dialog"
+import {Dialog, DialogTrigger} from "@/components/ui/dialog"
 import { AnimatedDialogContent } from "@/components/AnimatedDialogContent"
 
 export const metadata: Metadata = {
