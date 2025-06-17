@@ -1,7 +1,6 @@
-import headshot from '../components/headshot.jpeg';
 import Link from 'next/link';
 import Image from 'next/image';
-import type { Metadata } from 'next';
+import { Metadata } from 'next/types';
 import Card from '@/components/ui/card';
 import { Section, H2, P, Button } from "../components/primitives"
 import {Dialog, DialogTrigger} from "@/components/ui/dialog"
@@ -21,7 +20,7 @@ export default function Home() {
           <div className="relative group">
             <div className="absolute -inset-2 rounded-full bg-neutral-700/50 transition-all duration-300 group-hover:bg-neutral-600/50 group-hover:shadow-[0_0_20px_rgba(255,255,255,0.1)]" />
             <Image
-              src={headshot}
+              src="/images/headshot.jpeg"
               alt="Ethan Frost"
               width={200}
               height={200}
@@ -48,8 +47,7 @@ export default function Home() {
           <P>
             I&apos;m a Vermont‑raised equity research analyst living in New York City, working at the
             intersection of finance, defense, and technology. By day, I cover
-            next generation aerospace & defense companies, as well as cybersecurity. By night,
-            I slam jbls and bump gunner with the bros. I&apos;ve
+            next generation aerospace & defense companies, as well as cybersecurity. I&apos;ve
             always been drawn to tools, ideas, and technologies that change how
             things get built. I pride myself as a life long independent learner.
           </P>
