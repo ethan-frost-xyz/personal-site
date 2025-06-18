@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Section, H2, P} from "@/components/primitives";
-import { Timeline } from "@/components/ui/timeline";
+import { Timeline } from "../../components/ui/timeline";
 
 export const metadata: Metadata = {
   title: "About – Ethan Frost",
