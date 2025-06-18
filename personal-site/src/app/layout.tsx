@@ -1,7 +1,7 @@
 import './globals.css'
 import type { ReactNode } from 'react'
 import LinkedIn from '../components/LinkedIn'
-import { Navbar } from '../components/ui/navbar'
+import { Navbar } from '@/components/ui/navbar'
 
 export const metadata = {
   title: 'Ethan Frost',
