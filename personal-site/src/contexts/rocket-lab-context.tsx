@@ -364,18 +364,24 @@ export function RocketLabProvider({ children }: { children: React.ReactNode }) {
     };
   }, [getFilteredMissions]);
 
-  // Initialize missions with calculated capacity on mount
+  // Auto-calculate capacity for missions without it
   React.useEffect(() => {
-    const initialMissions = INITIAL_MISSIONS.map(mission => {
-      const estimatedCapacity = calculateCapacity(mission.altitude, mission.inclination);
-      return {
-        ...mission,
-        estimatedCapacity,
-        utilization: (mission.payload / estimatedCapacity) * 100
-      };
+    const updatedMissions = missions.map(mission => {
+      if (!mission.estimatedCapacity) {
+        const estimatedCapacity = calculateCapacity(mission.altitude, mission.inclination);
+        return {
+          ...mission,
+          estimatedCapacity,
+          utilization: (mission.payload / estimatedCapacity) * 100
+        };
+      }
+      return mission;
     });
-    setMissions(initialMissions);
-  }, [calculateCapacity]);
+    
+    if (JSON.stringify(updatedMissions) !== JSON.stringify(missions)) {
+      setMissions(updatedMissions);
+    }
+  }, [missions, calculateCapacity]);
 
   const contextValue: RocketLabContextType = {
     // Data
