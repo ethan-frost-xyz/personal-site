@@ -514,8 +514,8 @@ export default function Page() {
 
           <div className="text-center">
             <Button asChild variant="secondary" className="mr-4">
-              <Link href="/work">← Back to Work</Link>
-            </Button>
+          <Link href="/work">← Back to Work</Link>
+        </Button>
             <Button asChild variant="ghost">
               <a href="https://github.com/yourusername/rocket-lab-analysis" target="_blank" rel="noopener noreferrer">
                 View on GitHub →
@@ -534,4 +534,4 @@ export default function Page() {
     </main>
     </RocketLabProvider>
   );
-}
+} 
