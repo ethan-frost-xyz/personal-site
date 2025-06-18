@@ -1,10 +1,10 @@
 import Link from 'next/link';
 import { Section, H2, P, Button, Muted } from '@/components/primitives';
-import { InteractiveChart } from '@/components/ui/interactive-chart';
-import { CapacityCalculator } from '@/components/rocket-lab/capacity-calculator';
-import { MissionBrowser } from '@/components/rocket-lab/mission-browser';
-import { ScrollAnimation, AnimatedCounter, StaggeredAnimation, AnimatedProgressBar, TypingAnimation } from '@/components/ui/scroll-animations';
-import { RocketLabProvider } from '@/contexts/rocket-lab-context';
+import { InteractiveChart } from 'src/components/ui/interactive-chart';
+import { CapacityCalculator } from 'src/components/rocket-lab/capacity-calculator';
+import { MissionBrowser } from 'src/components/rocket-lab/mission-browser';
+import { ScrollAnimation, AnimatedCounter, StaggeredAnimation, AnimatedProgressBar, TypingAnimation } from 'src/components/ui/scroll-animations';
+import { RocketLabProvider } from 'src/contexts/rocket-lab-context';
 
 export default function Page() {
   return (
