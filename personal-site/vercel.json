@@ -1,6 +1,5 @@
 {
-  "buildCommand": "cd personal-site && npm run build",
-  "outputDirectory": "personal-site/.next",
-  "installCommand": "cd personal-site && npm install",
-  "rootDirectory": "personal-site"
+  "buildCommand": "npm run build",
+  "outputDirectory": ".next",
+  "installCommand": "npm install"
 } 
