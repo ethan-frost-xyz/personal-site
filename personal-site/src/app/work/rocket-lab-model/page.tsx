@@ -23,7 +23,7 @@ export default function Page() {
           </h1>
           <ScrollAnimation animation="fadeIn" delay={3000}>
             <P className="text-lg text-neutral-400 max-w-2xl mx-auto">
-              High-fidelity analysis revealing how Rocket Lab&apos;s constrained payload capacity 
+              High-fidelity analysis revealing how Rocket Lab's constrained payload capacity 
               affects mission efficiency and customer satisfaction
             </P>
           </ScrollAnimation>
@@ -42,10 +42,10 @@ export default function Page() {
             <div className="space-y-4">
               <H2 className="text-3xl">The Problem</H2>
             <P className="text-lg text-neutral-300 leading-relaxed">
-              Rocket Lab&apos;s Electron is a small-lift launch vehicle that is the second most 
+              Rocket Lab's Electron is a small-lift launch vehicle that is the second most 
               launched platform for multiple years in a row, yet its advertised 300 kg payload 
               limit at 500 km low-Earth orbit (LEO) raised investor questions about addressable 
-              demand and pricing power. In mid-2024 clients asked for proof: Is Electron&apos;s 
+              demand and pricing power. In mid-2024 clients asked for proof: Is Electron's 
               limited capacity a real bottleneck or merely an optics issue? The objective was 
               to quantify historical capacity utilization (payload mass / 300 kg) across every 
               Electron mission to date and determine whether utilization patterns signaled 
@@ -72,10 +72,10 @@ export default function Page() {
 
           <div className="bg-neutral-900/30 border-l-4 border-neutral-600 pl-6 py-4">
             <P className="text-neutral-300 italic">
-              &ldquo;I wanted to dig deeper and find out how often Rocket Lab ran into issues 
+              "I wanted to dig deeper and find out how often Rocket Lab ran into issues 
               with this limitation. For investors, the results would unlock a conclusive 
               take on whether Rocket Lab was struggling to meet customer requirements 
-              or if there was ample demand for small satellite launches.&rdquo;
+              or if there was ample demand for small satellite launches."
             </P>
           </div>
         </div>
@@ -87,7 +87,7 @@ export default function Page() {
           <div className="space-y-4">
             <H2 className="text-3xl">The Early Findings</H2>
             <P className="text-lg text-neutral-300 leading-relaxed">
-              I compiled a master log of &gt;50 Electron flights from Rocket Lab&apos;s post-mission 
+              I compiled a master log of {'>'}50 Electron flights from Rocket Lab's post-mission 
               documentation which provided ample information including launch site, date, 
               orbital altitude (km), orbital inclination, and the payload mass (kg). 
               Payload mass, the most important variable, was occasionally disclosed, 
@@ -173,9 +173,9 @@ export default function Page() {
           </div>
 
           <P className="text-neutral-300">
-            Mission details from Rocket Lab&apos;s website provided inclination and payload mass, 
+            Mission details from Rocket Lab's website provided inclination and payload mass, 
             but there was no clear way to calculate the actual efficiency of launches 
-            and how much Rocket Lab was &ldquo;red-lining&rdquo; their vehicle.
+            and how much Rocket Lab was "red-lining" their vehicle.
           </P>
         </div>
       </Section>
@@ -186,7 +186,7 @@ export default function Page() {
           <div className="space-y-4">
             <H2 className="text-3xl">The Key Discovery</H2>
             <P className="text-lg text-neutral-300 leading-relaxed">
-              After digging through Electron&apos;s user documentation, I found the solution: 
+              After digging through Electron's user documentation, I found the solution: 
               performance curves showing how payload capacity varies with altitude and inclination.
             </P>
           </div>
@@ -384,14 +384,14 @@ export default function Page() {
                   <div className="font-semibold text-yellow-400 mb-2">Operational Insight</div>
                   <div className="text-sm text-neutral-300">
                     Several missions exceeded 95% capacity, suggesting customers 
-                    are willing to optimize payloads for Electron&apos;s constraints
+                    are willing to optimize payloads for Electron's constraints
                   </div>
                 </div>
                 <div className="bg-blue-900/20 border border-blue-800 rounded-lg p-4">
                   <div className="font-semibold text-blue-400 mb-2">Market Validation</div>
                   <div className="text-sm text-neutral-300">
                     Results validate the small satellite market thesis and 
-                    Rocket Lab&apos;s positioning strategy
+                    Rocket Lab's positioning strategy
                   </div>
                 </div>
               </div>
