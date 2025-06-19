@@ -13,7 +13,7 @@ export default function Page() {
       {/* ---------------- Hero Section ---------------- */}
       <section className="py-12 text-center border-b border-neutral-800">
         <div className="space-y-6">
-          <h1 className="text-4xl lg:text-5xl font-bold tracking-tight">
+          <h1 className="text-4xl lg:text-4xl font-bold tracking-tight">
             <TypingAnimation 
               text="Rocket Lab Launch Efficiency Model" 
               speed={100} 
@@ -30,7 +30,6 @@ export default function Page() {
           <div className="flex flex-wrap justify-center gap-2 text-sm">
             <span className="px-3 py-1 bg-neutral-800 rounded-full text-neutral-300">Python</span>
             <span className="px-3 py-1 bg-neutral-800 rounded-full text-neutral-300">Data Analysis</span>
-            <span className="px-3 py-1 bg-neutral-800 rounded-full text-neutral-300">Interpolation</span>
             <span className="px-3 py-1 bg-neutral-800 rounded-full text-neutral-300">Aerospace</span>
           </div>
         </div>
@@ -43,9 +42,14 @@ export default function Page() {
             <div className="space-y-4">
               <H2 className="text-3xl">The Problem</H2>
             <P className="text-lg text-neutral-300 leading-relaxed">
-              Rocket Lab&apos;s Electron launch vehicle has significantly lower payload capacity 
-              compared to competitors like SpaceX&apos;s Falcon 9, yet the company achieved 
-              the second-most launches in 2024.
+              Rocket Lab&apos;s Electron is a small-lift launch vehicle that is the second most 
+              launched platform for multiple years in a row, yet its advertised 300 kg payload 
+              limit at 500 km low-Earth orbit (LEO) raised investor questions about addressable 
+              demand and pricing power. In mid-2024 clients asked for proof: Is Electron&apos;s 
+              limited capacity a real bottleneck or merely an optics issue? The objective was 
+              to quantify historical capacity utilization (payload mass / 300 kg) across every 
+              Electron mission to date and determine whether utilization patterns signaled 
+              unmet demand or comfortable operating headroom.
             </P>
             </div>
           </ScrollAnimation>
@@ -53,7 +57,7 @@ export default function Page() {
           {/* Stats comparison placeholder */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-8">
             <div className="bg-neutral-900/50 border border-neutral-800 rounded-xl p-6 text-center">
-              <div className="text-2xl font-bold text-neutral-100">~300kg</div>
+              <div className="text-2xl font-bold text-neutral-100">300kg</div>
               <div className="text-sm text-neutral-400 mt-1">Electron Capacity</div>
             </div>
             <div className="bg-neutral-900/50 border border-neutral-800 rounded-xl p-6 text-center">
@@ -61,8 +65,8 @@ export default function Page() {
               <div className="text-sm text-neutral-400 mt-1">Falcon 9 Capacity</div>
             </div>
             <div className="bg-neutral-900/50 border border-neutral-800 rounded-xl p-6 text-center">
-              <div className="text-2xl font-bold text-neutral-100">#2</div>
-              <div className="text-sm text-neutral-400 mt-1">Launch Frequency 2024</div>
+              <div className="text-2xl font-bold text-neutral-100">76x</div>
+              <div className="text-sm text-neutral-400 mt-1">Payload Capacity than Electron</div>
             </div>
           </div>
 
@@ -81,12 +85,22 @@ export default function Page() {
       <Section id="background" className="py-16 bg-neutral-950/50">
         <div className="space-y-8">
           <div className="space-y-4">
-            <H2 className="text-3xl">The Complexity</H2>
+            <H2 className="text-3xl">The Early Findings</H2>
             <P className="text-lg text-neutral-300 leading-relaxed">
-              The advertised 300kg capacity isn&apos;t universal—it&apos;s only valid for specific 
-              mission parameters. Space launch is complicated, and mission parameters 
-              can completely change payload capacity.
+              I compiled a master log of &gt;50 Electron flights from Rocket Lab&apos;s post-mission 
+              documentation which provided ample information including launch site, date, 
+              orbital altitude (km), orbital inclination, and the payload mass (kg). 
+              Payload mass, the most important variable, was occasionally disclosed, 
+              but more often than not required some internet investigating.
             </P>
+            <P className="text-lg text-neutral-300 leading-relaxed">
+              To close the gaps, I sourced payload mass from the following sources:
+            </P>
+            <div className="text-neutral-300 ml-4 space-y-2">
+              <div>1. Customer websites and press releases (or contracting data for government customers)</div>
+              <div>2. Satellite-builder data sheets and space flight tracker logs</div>
+              <div>3. Calculated mass based on the maximum size NASA standards for variance CubeSat and related form factors (6U, 12U, etc.) if nothing else was available</div>
+            </div>
           </div>
 
           {/* Mission example */}
