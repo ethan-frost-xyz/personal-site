@@ -1,3 +1,4 @@
+import React from "react";
 import type { Metadata } from "next";
 import { Section, H2, P} from "@/components/primitives";
 import { Timeline } from "../../components/ui/timeline";
@@ -8,6 +9,16 @@ export const metadata: Metadata = {
     "Timeline resume, bio, and career highlights for Ethan Frost – analyst at the intersection of finance, defense, and technology.",
 };
 
+// Bio content defined at the top for better code organization
+const bioData = {
+  title: "About",
+  paragraphs: [
+    "I'm a Vermont‑raised equity research analyst living in New York City, working at the intersection of finance, defense, and technology. By day, I cover next generation aerospace & defense companies, as well as cybersecurity. I've always been drawn to tools, ideas, and technologies that change how things get built. I pride myself as a life long independent learner.",
+    "I spent my youth obsessed with getting more with less, particularly in school where I would rather be learning outside than inside the classroom. My background blends financial rigor with technical fluency, and I gravitate toward problems that don't come with a playbook. Whether it's modeling, writing, or building systems behind the scenes, I'm focused on clarity, speed, and impact."
+  ]
+};
+
+// Timeline data defined below bio data
 const timelineData = [
   {
     title: "Equity Research Associate",
@@ -89,13 +100,13 @@ const timelineData = [
     content: (
       <ul className="list-disc list-inside text-sm text-neutral-400 space-y-1">
         <li>Was hired to support the company&apos;s Web3 efforts, expanded into a generalist role serving across multiple departments including marketing, sales, partnerships, and Web3 initiatives.</li>
-        <li><a href="https://superplastic.co/" target="_blank" rel="noopener noreferrer" className="underline hover:text-neutral-300">Superplastic</a> is a entertainment based startup that intertwines physical and digital experiences through digital celebrities.</li>
+        <li><a href="https://superplastic.co/" target="_blank" rel="noopener noreferrer" className="underline hover:text-neutral-300">Superplastic</a> is an entertainment-based startup that intertwines physical and digital experiences through digital celebrities.</li>
         <li>The experiences below were essential for getting this role.</li>
       </ul>
     ),
   },
   {
-    title: "Defi Exploration",
+    title: "DeFi Exploration",
     date: "2021 to 2022",
     location: "Burlington, VT",
     content: (
@@ -134,22 +145,12 @@ export default function AboutPage() {
     <main className="mx-auto w-[95%] md:max-w-screen-lg px-2 md:px-4 py-12 space-y-6">
       {/* ---------------- Bio ---------------- */}
       <Section className="space-y-4 py-4">
-        <H2>About</H2>
-        <P className="text-lg">
-          I&apos;m a Vermont‑raised equity research analyst living in New York City, working at the
-          intersection of finance, defense, and technology. By day, I cover
-          next generation aerospace & defense companies, as well as cybersecurity. I&apos;ve
-          always been drawn to tools, ideas, and technologies that change how
-          things get built. I pride myself as a life long independent learner.
-        </P>
-        <P className="text-lg">
-          I spent my youth obsessed with getting more with less, particularly
-          in school where I would rather be learning outside than inside the
-          classroom. My background blends financial rigor with technical fluency,
-          and I gravitate toward problems that don&apos;t come with a playbook.
-          Whether it&apos;s modeling, writing, or building systems behind the scenes,
-          I&apos;m focused on clarity, speed, and impact.
-        </P>
+        <H2>{bioData.title}</H2>
+        {bioData.paragraphs.map((paragraph, index) => (
+          <P key={`bio-paragraph-${index}`} className="text-lg">
+            {paragraph}
+          </P>
+        ))}
       </Section>
 
       {/* ---------------- Timeline ---------------- */}
