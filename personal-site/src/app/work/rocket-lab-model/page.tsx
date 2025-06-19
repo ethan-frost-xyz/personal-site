@@ -101,6 +101,18 @@ export default function Page() {
               <div>2. Satellite-builder data sheets and space flight tracker logs</div>
               <div>3. Calculated mass based on the maximum size NASA standards for variance CubeSat and related form factors (6U, 12U, etc.) if nothing else was available</div>
             </div>
+            <P className="text-lg text-neutral-300 italic">
+            Very early into collecting mission data, I recognized something deeply flawed with my approach; the advertised 300kg capacity isn't universal—it's only for 500km…
+            </P>
+            <div className="bg-neutral-900/50 border border-neutral-800 rounded-xl p-6 space-y-2 mt-8">
+              <P className="text-lg text-neutral-300 font-bold">
+              A flat 300 kg divisor ignores two key rocket-science realities:
+              </P>
+              <div className="text-neutral-300 ml-2 space-y-2">
+                <div>1. <strong>Orbital Altitude:</strong> Higher target altitude demands more delta-V, reducing usable payload. Most of the fuel is burned getting into orbit, so fuel efficiency increases by orders of magnitude once in orbit.</div>
+                <div>2. <strong>Orbital Inclination:</strong> Launching into a steeper inclination sacrifices lateral velocity for plane-change, again cutting payload.</div>
+              </div>
+            </div>
           </div>
 
           {/* Mission example */}
@@ -130,9 +142,12 @@ export default function Page() {
           <div className="space-y-4">
             <h3 className="text-xl font-semibold">What is Orbital Inclination?</h3>
             <P className="text-neutral-300">
-              Orbital inclination is the angle between a satellite&apos;s orbit and Earth&apos;s equator. 
-              Think of it like launching a paper airplane—throwing it straight ahead (0°) 
-              is easiest, but throwing it at an angle requires more energy and strength.
+              Orbital inclination is basically the angle that describes which direction your 
+              rocket goes around Earth compared to the equator (the imaginary line around Earth's middle). 
+              Think of it like jumping off a spinning merry-go-round, jumping in the direction it's spinning 
+              gives you free extra speed, but jumping sideways or backwards means you miss out on that boost 
+              and have to work harder to go the same distance. That isn't how physics actually works but neither 
+              of us are rocket scientists.
             </P>
             
             {/* Inclination visualization placeholder */}
