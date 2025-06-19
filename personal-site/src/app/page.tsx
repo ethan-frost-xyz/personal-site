@@ -8,8 +8,8 @@ import {Dialog, DialogTrigger} from "@/components/ui/dialog"
 import { AnimatedDialogContent } from "@/components/AnimatedDialogContent"
 
 export const metadata: Metadata = {
-  title: 'Home – Ethan Frost',
-  description: 'Turning frontier-tech insight into shipped outcomes.',
+  title: 'Ethan Frost',
+  description: 'Finance bro on the outside, tech bro on the inside.',
 };
 
 export default function Home() {
@@ -31,7 +31,7 @@ export default function Home() {
           </div>
           <h1 className="text-5xl font-semibold tracking-tight">Ethan Frost</h1>
           <P className="max-w-2xl mx-auto">
-            Artificial Intelligence, Equity Research, and Defense Technology. Project underconstruction. Please excuse the AI slop.
+            Artificial Intelligence, Equity Research, and Defense Technology.
           </P>
           {/* ---------------- Navigation Buttons ---------------- */}
           <div className="flex gap-4">
@@ -47,10 +47,10 @@ export default function Home() {
         <Section id="introduction" className='py-4'>
           <P>
             I&apos;m a Vermont‑raised equity research analyst living in New York City, working at the
-            intersection of finance, defense, and technology. By day, I cover
-            next generation aerospace & defense companies, as well as cybersecurity. By night,
+            intersection of finance, defense, and technology. I cover
+            next generation aerospace & defense companies, as well as cybersecurity. 
             I&apos;ve always been drawn to tools, ideas, and technologies that change how
-            things get built. I pride myself as a life long independent learner.
+            things get built. I pride myself as a life long learner.
           </P>
         </Section>
 
