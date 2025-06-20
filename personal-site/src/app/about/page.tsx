@@ -2,6 +2,7 @@ import React from "react";
 import type { Metadata } from "next";
 import { Section, H2, P} from "@/components/primitives";
 import { Timeline } from "../../components/ui/timeline";
+import { ScrollAnimation } from 'src/components/ui/scroll-animations';
 
 export const metadata: Metadata = {
   title: "About – Ethan Frost",
@@ -145,11 +146,15 @@ export default function AboutPage() {
     <main className="mx-auto w-[95%] md:max-w-screen-lg px-2 md:px-4 py-12 space-y-6">
       {/* ---------------- Bio ---------------- */}
       <Section className="space-y-4 py-4">
-        <H2>{bioData.title}</H2>
+        <ScrollAnimation animation="fadeIn" delay={300} duration={800}>
+          <H2>{bioData.title}</H2>
+        </ScrollAnimation>
         {bioData.paragraphs.map((paragraph, index) => (
-          <P key={`bio-paragraph-${index}`} className="text-lg">
-            {paragraph}
-          </P>
+          <ScrollAnimation key={`bio-paragraph-${index}`} animation="fadeIn" delay={500 + (index * 200)} duration={800}>
+            <P className="text-lg">
+              {paragraph}
+            </P>
+          </ScrollAnimation>
         ))}
       </Section>
 
