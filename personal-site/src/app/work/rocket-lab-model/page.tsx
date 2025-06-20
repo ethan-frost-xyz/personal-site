@@ -15,7 +15,7 @@ export default function Page() {
         <div className="space-y-6">
           <h1 className="text-4xl lg:text-4xl font-bold tracking-tight">
             <TypingAnimation 
-              text="Rocket Lab Launch Efficiency Model" 
+              text="Rocket Lab Launch Efficiency Model"
               speed={100} 
               delay={500}
               cursor={false}
