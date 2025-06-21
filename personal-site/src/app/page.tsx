@@ -62,7 +62,7 @@ export default function Home() {
               intersection of finance, defense, and technology. I cover
               next generation aerospace & defense companies, as well as cybersecurity. 
               I&apos;ve always been drawn to tools, ideas, and technologies that change how
-              things get built. I pride myself as a life long learner.
+              things get built. I pride myself as a lifelong learner.
             </P>
           </Section>
         </ScrollAnimation>

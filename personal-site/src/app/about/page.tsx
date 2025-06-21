@@ -161,6 +161,9 @@ export default function AboutPage() {
       {/* ---------------- Timeline ---------------- */}
       <Section className="pt-0 pb-42">
         <div className="bg-neutral-900/70 rounded-2xl p-6 backdrop-blur-sm">
+          <ScrollAnimation animation="fadeIn" delay={900} duration={800}>
+            <H2 className="mb-4">Career & Education Timeline</H2>
+          </ScrollAnimation>
           <h2 className="sr-only">Career & Education Timeline</h2>
           <Timeline data={timelineData} />
         </div>
