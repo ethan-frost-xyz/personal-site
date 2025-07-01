@@ -3,11 +3,10 @@ import Card from "@/components/ui/card"
 
 export default function Page() {
   return (
-    <main className="max-w-4xl mx-auto mt-20 space-y-12">
+    <main className="max-w-4xl mx-auto mt-50 space-y-0">
       <Section>
         <H2>Get in Touch</H2>
         <P className="max-w-2xl">
-          I&apos;m always interested in connecting with fellow professionals in finance, defense, and technology. 
           Feel free to reach out through any of the channels below.
         </P>
       </Section>
@@ -17,7 +16,7 @@ export default function Page() {
         <Card
           title="Email"
           description="For professional inquiries and collaborations"
-          href="mailto:your.email@example.com"
+          href="mailto:ethanfrostbvt@gmail.com"
         />
 
         {/* LinkedIn Section */}
@@ -27,26 +26,25 @@ export default function Page() {
           href="https://www.linkedin.com/in/ethan-frost-/"
         />
 
-        {/* Twitter Section */}
+        {/* RYM Section */}
         <Card
-          title="Twitter"
-          description="Follow for industry insights"
-          href="https://twitter.com/your-handle"
+          title="Rate Your Music (RYM)"
+          description="Goodreads for music"
+          href="rateyourmusic.com/ethanfrost"
         />
 
         {/* GitHub Section */}
         <Card
           title="GitHub"
-          description="Check out my code"
+          description="Check out my projects"
           href="https://github.com/ethan-frost-xyz"
         />
       </div>
 
-      <Section>
-        <P className="text-sm text-neutral-500">
-          I typically respond to emails within 24 hours. For urgent matters, please indicate so in the subject line.
-        </P>
-      </Section>
+      {/* ---------------- Footer ---------------- */}
+      <footer className="py-8 text-center text-sm text-neutral-500">
+        © Ethan Frost — Last updated June 2025 — Built with Next.js & Tailwind CSS
+      </footer>
     </main>
   )
 }  

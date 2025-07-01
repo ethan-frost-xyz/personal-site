@@ -95,7 +95,7 @@ export default function Home() {
     </main>
       {/* ---------------- Footer ---------------- */}
       <footer className="py-8 text-center text-sm text-neutral-500">
-        © Ethan Frost — Last updated June 2025 — Built with Next.js & Tailwind via Cursor
+      © Ethan Frost — Last updated June 2025 — Built with Next.js & Tailwind CSS
       </footer>
     </>
   );

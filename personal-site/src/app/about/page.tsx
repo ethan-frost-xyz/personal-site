@@ -14,8 +14,13 @@ export const metadata: Metadata = {
 const bioData = {
   title: "About",
   paragraphs: [
-    "I'm a Vermont‑raised equity research analyst living in New York City, working at the intersection of finance, defense, and technology. By day, I cover next generation aerospace & defense companies, as well as cybersecurity. I've always been drawn to tools, ideas, and technologies that change how things get built. I pride myself as a life long independent learner.",
-    "I spent my youth obsessed with getting more with less, particularly in school where I would rather be learning outside than inside the classroom. My background blends financial rigor with technical fluency, and I gravitate toward problems that don't come with a playbook. Whether it's modeling, writing, or building systems behind the scenes, I'm focused on clarity, speed, and impact."
+    "I spent my youth obsessed with getting more with less, particularly in school where I would rather be learning outside than inside the classroom.",
+    "While mostly covered on the bottom of my resume, here is a more detailed explanation of my interests (in no particular order):",
+    "[photo slide thing here]",
+    "Art History: Became a strong interest of mine after my time living in Berlin, my favorite artists are Kazimir Malevich, Joseph Turner, and ",
+    "Sports: Celtics, Patriots, and Crystal Palace FC",
+    "Chess: Here was my peak as a human being. No more tournaments, now enjoy the game casually",
+    "Film Photography (show photos from yellow stone, berlin, vermont tower thing, and kenya), Music (rate your music, my father was in a punk band in his youth, grew up with ramones), and US History (Presidents are my favorite way of learning)."
   ]
 };
 
@@ -42,7 +47,7 @@ const timelineData = [
       <ul className="list-disc list-inside text-sm text-neutral-400 space-y-1">
         <li>Developed AI advisor for non-target business students seeking finance careers.</li>
         <li>Conducted user research with students and career advisors to validate concept.</li>
-        <li>add why it failed.</li>
+        <li>Project was put on ice when I got an offer for my current job.</li>
       </ul>
     ),
   },
@@ -119,13 +124,13 @@ const timelineData = [
     ),
   },
   {
-    title: "Passed National and State Real Estate License (VT)",
+    title: "Passed National and State Real Estate License",
     date: "Winter Break 2020",
     location: "Burlington, VT",
     content: (
       <ul className="list-disc list-inside text-sm text-neutral-400 space-y-1">
         <li>Planted the seeds to the idea of leveraging unconventional exams to differentiate myself without internship experience.</li>
-        <li>I also picked up Photoshop, and created posters of my favorite musicians as Pokemon cards to sell to my friends.</li>
+        <li>I also picked up Photoshop, and created high res posters of my favorite musicians as <a href="" target="_blank" rel="noopener noreferrer" className="underline hover:text-neutral-300">Pokemon cards</a> to sell to people on instagram.</li>
       </ul>
     ),
   },
@@ -158,7 +163,7 @@ export default function AboutPage() {
         ))}
       </Section>
 
-      {/* ---------------- Timeline ---------------- */}
+      {/* ---------------- Timeline  Header---------------- */}
       <Section className="pt-0 pb-42">
         <div className="bg-neutral-900/70 rounded-2xl p-6 backdrop-blur-sm">
           <ScrollAnimation animation="fadeIn" delay={900} duration={800}>
@@ -170,8 +175,8 @@ export default function AboutPage() {
       </Section>
 
       {/* ---------------- Footer ---------------- */}
-      <footer className="pt-12 text-sm text-neutral-500">
-        © Ethan Frost — Last updated June 2025 - Built from scratch with Next.js and Tailwind CSS via Cursor
+      <footer className="py-8 text-center text-sm text-neutral-500">
+      © Ethan Frost — Last updated June 2025 — Built with Next.js & Tailwind CSS
       </footer>
     </main>
   );

@@ -554,11 +554,9 @@ export default function Page() {
         </div>
       </Section>
 
-      {/* ---------------- Footer Navigation ---------------- */}
-      <footer className="py-8 text-center border-t border-neutral-800">
-        <Muted>
-          Built with Python, SciPy, and data-driven insights
-        </Muted>
+      {/* ---------------- Footer ---------------- */}
+      <footer className="py-8 text-center text-sm text-neutral-500">
+      © Ethan Frost — Last updated June 2025 — Built with Next.js & Tailwind CSS
       </footer>
     </main>
     </RocketLabProvider>
